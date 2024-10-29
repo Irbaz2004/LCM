@@ -1,0 +1,181 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+    color: #1b2f45;
+    margin: 10px 20px;
+    border-bottom: 5px solid #B2494D;
+    font-family: "Prompt", sans-serif;
+
+}
+
+.container {
+    text-align: center;
+    max-width: 1000px; /* Increased max-width */
+    width: 100%;
+    margin-top: 80px; /* Added more space from the navbar */
+}
+
+h1 {
+    font-size: 60px;
+    color: #1B3858;
+    margin-bottom: 10px;
+        font-family: "Prompt", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      
+}
+.soon{
+    letter-spacing: 10px;
+    font-weight: 100;
+
+}
+
+p {
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.countdown {
+    display: flex;
+    gap: 30px; /* Increased gap between time-boxes */
+    flex-wrap: wrap;
+    max-width: 1000px; /* Increased max-width */
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+}
+
+.time-box {
+    background-color: #1B3858;
+    color: #B2494D;
+    width: 140px; /* Adjusted width */
+    height: 140px; /* Adjusted height */
+    padding: 10px; /* Added padding for consistent spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(27, 56, 88, 0.47); /* Enhanced box shadow */
+
+}
+
+.time-box span {
+    font-size: 68px; /* Increased font size */
+    font-weight: 500;
+    /* margin-top: 30px; */
+    font-family: "Prompt", sans-serif;
+
+}
+
+.time-box p {
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top:60px;
+}
+
+.subscribe input {
+    width: 250px;
+    padding: 14px 15px;
+    border: 1px solid #cccccc;
+    background-color: #1B3858;
+}
+
+.subscribe input::placeholder {
+    color: #ffffff;
+}
+
+.subscribe button {
+    background-color: #B2494D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.notification {
+    font-size: 14px;
+    color: #1b2f45;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .countdown {
+        gap: 15px; /* Adjusted gap for smaller screens */
+    }
+
+    .time-box {
+        width: 100px; /* Adjusted width for responsiveness */
+        height: 100px; /* Adjusted height for responsiveness */
+    }
+
+    .time-box span {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe input {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .subscribe button {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
