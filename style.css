@@ -112,27 +112,23 @@ p {
     flex-wrap: wrap;
     margin-top:60px;
 }
-
-.subscribe input {
-    width: 250px;
-    padding: 14px 15px;
-    border: 1px solid #cccccc;
-    background-color: #1B3858;
-    color: #ffffff;
-}
-
-.subscribe input::placeholder {
-    color: #ffffff;
-}
-
-.subscribe button {
-    background-color: #B2494D;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+.subscribe i{
+    margin: 10px 20px;
+    font-size: 25px;
+    transition: color 0.3s ease-in-out;
     cursor: pointer;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+}
+.fa-square-instagram{
+    color: #B2494D;
+}
+.fa-facebook{
+    color: #3a597b;
+}
+.fa-twitter{
+    color: #1B3858;
+}
+.fa-linkedin{
+    color: #084b93;
 }
 
 .notification {
