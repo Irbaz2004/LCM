@@ -118,6 +118,7 @@ p {
     padding: 14px 15px;
     border: 1px solid #cccccc;
     background-color: #1B3858;
+    color: #ffffff;
 }
 
 .subscribe input::placeholder {
